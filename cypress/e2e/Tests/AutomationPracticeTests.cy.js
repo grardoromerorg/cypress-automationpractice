@@ -23,7 +23,7 @@ describe('automationpractice.com automated tests', function(){
     const myAccountPage = new MyAccountPage()
 
 beforeEach(function(){
-        //to generate a random array from the testData.json file 
+        //to generate a random array from the testData.json file  TEST COMMIT
         cy.fixture('testData').then(function(data){
         var random = (new Date().getMilliseconds() % data.length);
         this.data=data[random];
